@@ -1,0 +1,72 @@
+nav{
+    background-color: rgb(33, 30, 30);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+nav li {
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    font-family: font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+div.logoiOS{
+    background-image: url(IosImages/logo.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+   align-items: center;
+}
+
+div.Loupe{
+    background-image: url(IosImages/loupe.png.webp);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+div.panier{
+    background-image: url(IosImages/panier.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+}
+
+.text-overlay{
+    position: absolute;
+    top:8%;
+    left: 25%;
+    
+   
+}
+
+.text-overlay{
+    color:black;
+    text-align: center;
+    font-size: 50px;
+    line-height: 1.47059;
+    font-weight: 400;
+    top: 50%;
+    font-family:"SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+
+}
+
+.miniscule{
+    font-size: 35px;
+    line-height: 1.47059;
+    font-weight: 400;
+    top: 50%;
+    font-family:  "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;;
+}
+
+.magvis{
+    justify-content: center;
+    margin-left: 1000%;
+}

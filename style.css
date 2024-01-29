@@ -1,0 +1,73 @@
+/*HOME PAGE*/
+body{
+   /*  background-color: aqua; */
+}
+
+p{
+    font-size: 10px;
+}
+
+
+/*NAV MENU (justify-content: end; = mettre le menu de nav a la fin*/
+/*la boite comprenant cahque boutons*/
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/*chaque bouton*/
+nav li {
+    list-style-type: none;
+    margin: 10px 20px;
+}
+
+/*le texte qu'il y a dans chaque bouton*/
+nav li a{
+    text-decoration: none;
+}
+
+/*les trois barres*/
+div.burger{
+    background-image: url(images/burger.png);
+    height: 25px;
+    width: 25px;
+    background-size: cover;
+    visibility: hidden;
+}
+
+/*changer l'image apres l'ouverture de la barre de nave*/
+div.burger.open{
+    background-image: url(images/open.png);
+}
+
+
+/*RESPONSIVE lorsqu'on passe en mode telephone*/
+@media only screen and (max-width: 600px) {
+    body {
+      /*background-color: red;*/
+    }
+
+    nav {
+        flex-direction: column;
+        display: none; /*enlever la nav*/
+    }
+
+    /*reafficher la nav*/
+    .open + nav{
+        display: block;
+    }
+
+    nav li{
+        text-align: center;
+    }
+
+    div.burger{
+        visibility: visible;
+    }
+
+    p{
+        font-size: 10px;
+    }
+  }
+
